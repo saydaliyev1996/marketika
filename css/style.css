@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+    width: 8px;
+    background: #aaaaaa;
+}
+html::-webkit-scrollbar-thumb {
+    border-radius: 32px;
+    background: #464646;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/*header*/
+header {
+    background: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    min-height: 840px;
+}
+.menu {
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.navbar {
+    display: none;
+}
+.navbar a {
+    margin: 0 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #464646;
+    text-transform: uppercase;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: #FE50A6;
+}
+#menu-icon {
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 10001;
+    color: #ffffff;
+    display: none;
+}
+/* homre */
+.home {
+    padding: 220px 0 280px 0;
+    text-align: center;
+    color: #fff;
+}
+.home h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.home p {
+    font-size: 18px;
+    font-weight: 400;
+    width: 535px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+input {
+    background: #fff;
+    border-radius: 4px;
+    order: none;
+    border: none;
+    display: inline;
+}
+input.name,
+input.email {
+    width: 375px;
+    height: 55px;
+    opacity: .25;
+}
+input::placeholder {
+    font-size: 16px;
+    padding-left: 20px;
+}
+input.name {
+    margin: 0 20px;
+}
+input.button {
+    width: 190px;
+    height: 55px;
+    background: linear-gradient(90deg, #FE985B 2.77%, #FE4FA7 100%);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+/* about */
+.about {
+    margin: 125px auto 115px auto;
+}
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-info h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #414141;
+    margin-bottom: 55px;
+}
+.about-text h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #414141;
+    margin-bottom: 15px;
+}
+.about-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+    width: 385px;
+}
+.about-text:last-child {
+    margin-top: 30px;
+}
+
+/* service */
+.service {
+    padding: 85px 0 135px 0;
+}
+.service-wrap {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    row-gap: 20px;
+}
+.service-wrap img {
+    margin-bottom: 20px;
+}
+.service-wrap h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #414141;
+    margin-bottom: 15px;
+}
+.service-wrap p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+    width: 365px;
+}
+
+/* blog */
+.blog {
+    background: #F6FAFD;
+    padding-top: 35px;
+}
+.blog-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog-img {
+    margin-right: 55px;  
+}
+.blog-info p {
+    width: 550px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #414141;
+    margin-bottom: 30px;
+}
+.blog-info h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #414141;
+}
+
+/* price */
+.price {
+    padding: 115px 0 150px 0;
+}
+.price-info {
+    text-align: center;
+}
+.price-info h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #414141;
+    margin-bottom: 15px;
+}
+.price-info p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+    margin-bottom: 65px;
+}
+
+.price-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+.price-box {
+    width: 370px;
+    height: 485px;
+    text-align: center;
+    padding: 50px 0 65px 0;
+    background: #F6FAFD;
+}
+.price-box span {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #414141;
+    margin-bottom: 25px;
+}
+.price-box h5 {
+    font-size: 72px;
+    font-weight: 700;
+    color: #FE4FA7;
+    margin-bottom: 30px;
+}
+.price-box p {
+    width: 280px;
+    font-weight: 400;
+    color: #6C6C6C;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.price-box .btn {
+    width: 190px;
+    height: 55px;
+    background: linear-gradient(90deg, #FE985B 2.77%, #FE4FA7 97.42%);
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px 50px;
+}
+.premium {
+    background: #fff;
+}
+.premium .btn {
+    background: transparent;
+    border: 1px solid #414141;
+    color: #414141;
+}
+
+/* contact */
+.contact {
+    padding: 120px 0;
+    text-align: center;
+    background: linear-gradient(90deg, #FE985B 2.77%, #FE4FA7 100%);
+    color: #fff;
+}
+.contact h2 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.contact p {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 50px;
+    width: 550px;
+    margin: 0 auto;
+}
+.contact .btn {
+    width: 190px;
+    height: 55px;
+    background: #fff;
+    color: #414141;
+    padding: 15px 50px;
+    border-radius: 4px;
+}
+
+/* footer */
+footer {
+    padding: 85px 0 95px 0;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #414141;
+    margin-bottom: 30px;
+}
+footer nav ul a {
+    margin: 0 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #464646;
+}
+footer nav ul a:hover,
+footer nav ul a.active {
+    color: #FE4FA7;
+}
+.copyright {
+    margin-top: 75px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #464646;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    #menu-icon {
+        display: initial;
+    }
+    .navbar {
+        display: inline-block;
+        position: absolute;
+        top: 13%;
+        right: 20px;
+        width: 250px;
+        height: 320px;
+        background: #fff;
+        box-shadow: 2px 2px 0 2px rgb(14 55 54 / 15%);
+        border-radius: 8px;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+    .navbar a {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        margin: 15px;
+        padding: 10px;
+    }
+    .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+    .home {
+        padding: 100px 0;
+    }
+    .home p {
+        width: 350px;
+        font-size: 15px;
+    }
+    input.name {
+        margin: 20px 0;
+    }
+    input.email {
+        margin-bottom: 20px;
+    }
+    input.button {
+        margin-left: 0;
+    }
+    .about {
+        margin: 65px auto 50px auto;
+    }
+    .about-wrapper {
+        flex-direction: column;
+    }
+    .about-img {
+        margin-top: 50px;
+    }
+    .service {
+        padding: 40px 0 70px 0;
+    }
+    .service-wrap {
+        grid-template-columns: auto;
+    }
+    .service-wrap p {
+        margin: 0 auto;
+    }
+    .blog-img img{
+        padding-left: 20px;
+    }
+    .blog-wrap {
+        flex-direction: column;
+    }
+    .blog-info {
+        padding-left: 10px;
+    }
+    .blog-info p {
+        width: 400px;
+        font-size: 20px;
+    }
+    .price-info h3 {
+        font-size: 25px;
+    }
+    .price-info p {
+        font-size: 14px;
+    }
+    .price-wrap {
+        flex-direction: column;
+    }
+    .contact {
+        padding: 60px;
+    }
+    .contact h2 {
+        font-size: 35px;
+    }
+    .contact p {
+        width: 400px;
+        font-size: 16px;
+        margin-left: -70px;
+    }
+    footer nav ul a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+}
